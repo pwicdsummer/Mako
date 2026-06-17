@@ -1,0 +1,48 @@
+# ============================================================
+# 核心运行时依赖
+# ============================================================
+python-dotenv
+PyQt5>=5.15
+qasync
+
+# ASR: FunASR (SenseVoice-Small) — 替换 faster-whisper
+funasr
+modelscope
+
+# VAD: Silero-VAD（保持不变）
+silero-vad
+
+# 声纹验证: CAM++ (via modelscope)
+# modelscope 已在上方引入
+
+# LLM
+openai
+
+# TTS
+requests
+
+# 音频处理
+sounddevice
+numpy
+torch
+torchaudio
+soundfile
+pydub
+scipy
+
+# 图片/时间轴
+pydub
+
+# 视觉: OpenCV Haar Cascade 人脸检测
+opencv-python>=4.8.0
+
+# 数据库: PostgreSQL 驱动（用于 stitch_mako_recall.py 物理灌入历史对话）
+psycopg2-binary>=2.9
+
+# 窗口捕获: pywin32 Z-Order 寻址 + GDI/PrintWindow 内存直出
+pywin32
+
+# 截屏保底: mss 全屏降级捕获
+mss
+
+
